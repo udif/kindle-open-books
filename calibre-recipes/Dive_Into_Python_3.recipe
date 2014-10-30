@@ -16,6 +16,8 @@ class Dive_Into_Python_3(BasicNewsRecipe):
                     dict(name='p', attrs={'style': 'float:right;width:245px;text-align:center;margin:0 0 0 1.75em'})]
     remove_tags_before = dict(name='h1')  # remove the unwanted things at the top of the page
 
+    def get_cover_url(self):
+        return 'http://www.pyexpert.com/images/Dive-Into-Python-3.jpg'
 
     def parse_index(self):
         soup = self.index_to_soup(self.INDEX)
